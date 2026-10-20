@@ -2,8 +2,8 @@ name: OurNotes update watcher
 
 on:
   schedule:
-    # GitHub 的 cron 有延迟，实际可能比设定晚几分钟到几十分钟
-    - cron: "*/30 * * * *"
+    - cron: "*/10 1-6 * * *"
+    - cron: "0 0,7-23 * * *"
   workflow_dispatch:
     inputs:
       test:
